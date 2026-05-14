@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Cabeçalho mais moderno */
+header {
+    background: linear-gradient(135deg, #5b2c6f, #9b59b6); /* Agora usamos um degradê de cores! */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 3.5em;
+    letter-spacing: 2px; /* Espaço maior entre as letras */
+}
+
+main {
+    max-width: 800px;
+    margin: -30px auto 30px; /* A margem negativa faz o conteúdo "subir" em cima do cabeçalho */
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Estilo da nova seção com a imagem */
+.perfil {
+    display: flex; /* Coloca a imagem e o texto lado a lado se tiver espaço */
+    align-items: center;
+    gap: 30px; /* Espaço entre a foto e o texto */
+    margin-bottom: 40px;
+}
+
+.foto-justin {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /* Garante que a foto não fique espremida */
+    border-radius: 50%; /* Transforma a foto quadrada em um círculo perfeito */
+    border: 5px solid #9b59b6;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #5b2c6f;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+/* Estilo dos Botões de Música */
+.sucessos {
+    text-align: center;
+}
+
+.lista-musicas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões quebrem a linha se não couberem */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botao-musica {
+    background-color: #5b2c6f;
+    color: white;
+    text-decoration: none; /* Tira o sublinhado padrão dos links */
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /* Adiciona uma animação suave */
+}
+
+/* O que acontece quando você passa o mouse por cima do botão */
+.botao-musica:hover {
+    background-color: #9b59b6;
+    transform: translateY(-3px); /* Faz o botão "pular" um pouquinho pra cima */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    margin-top: 40px;
+}
